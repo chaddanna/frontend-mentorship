@@ -1,0 +1,79 @@
+/* CSS Selector for an element type */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CSS Selector for an id */
+#intro {
+  background: #2d4d5b;
+  color: white;
+  padding: 40px;
+}
+
+/* CSS Selector for a class */
+.heading {
+  color: rgb(217, 217, 217);
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Selecting a nested element */
+#intro p span {
+  color: moccasin;
+}
+
+/* Selecting multiple elements */
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* a common practice is to create a container that can be used in several areas so your content aligns */
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.actions {
+  margin-top: 40px;
+}
+
+/* This affects all anchor elements */
+a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 20px;
+}
+
+/* This adjusts only the specified style and overwrites existing styles */
+a.html {
+  background: #9a9f7b;
+  border-radius: 20px;
+  color: paleturquoise;
+  text-decoration: none;
+}
+
+/* CSS Selector for an element that you mouse over*/
+a:hover {
+  opacity: 0.7;
+}
+
+form {
+  /* border requires a 'width', 'style', and 'color' */
+  border: 1px dashed black;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* selecting an element with a specific attribute */
+input[type="email"] {
+  border: 1px solid red;
+}

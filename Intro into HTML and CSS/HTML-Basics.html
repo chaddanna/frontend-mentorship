@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titile of website</title>
+    <!-- Uncomment the below line when going through CSS file -->
+    <!-- <link rel="stylesheet" href="CSS-Basics.css" /> -->
+  </head>
+  <body>
+    <!-- you can only have one ID -->
+    <div id="intro">
+      <!-- multiple classes -->
+      <div class="container">
+        <!-- You can set styles inline, but it's preferred to use a stylesheet so you can target multiple elements at once. -->
+        <h1 class="heading" style="font-size: 42px;">
+          Introduction to frontend stuff
+        </h1>
+
+        <p>
+          Some content and information that is provided to make more sense of
+          this space. <span>It's not all that useful though.</span>
+        </p>
+
+        <img
+          src="https://www.rei.com/dam/content_team_080317_61569_mountain_biking_beginners_lg.jpg"
+          alt=""
+          width="400"
+        />
+
+        <!-- Uncomment the div below to show how the div fixes the inline issues -->
+        <!-- <div class="actions"> -->
+        <a class="html" href="https://www.w3schools.com/html/default.asp">
+          View HTML
+        </a>
+        <a class="css" href="https://www.w3schools.com/css/default.asp">
+          View CSS
+        </a>
+        <a href="#tables">View the next section</a>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div id="tables" class="tables">
+      <!-- Only used for creating data tables, don't build elements or pages using tables -->
+      <div class="container">
+        <h1>Tables</h1>
+        <table border="8" width="100%">
+          <thead>
+            <tr>
+              <th>Here's</th>
+              <th>the</th>
+              <th>table header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Here's</td>
+              <td>the</td>
+              <td>table body</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Here's</td>
+              <td>the</td>
+              <td>table footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <div class="lists">
+      <div class="container">
+        <h1>Lists</h1>
+        <!-- want to show off some default styles that come with these elements -->
+        <ul>
+          <li>bulleted</li>
+          <li>lists</li>
+          <li>use UL</li>
+        </ul>
+        <ol>
+          <li>numbered</li>
+          <li>lists</li>
+          <li>use OL</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="forms">
+      <div class="container">
+        <h1>Forms</h1>
+        <!-- want to show some of the attributes  -->
+        <form action="/some-form-instructions-file">
+          <div>
+            <!-- for wants the id of the relevant input, so that when the label is clicked, it enters the input -->
+            <label for="firstname">First name:</label>
+            <input
+              id="firstname"
+              name="firstname"
+              type="text"
+              placeholder="Pete"
+            />
+          </div>
+          <div>
+            <label for="quality">Quality:</label>
+            <select id="quality" name="quality">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pete@gmail.com"
+            />
+          </div>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
