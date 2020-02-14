@@ -91,21 +91,29 @@
     <div class="forms">
       <div class="container">
         <h1>Forms</h1>
-        <!-- want to show some of the attributes  -->
+        <!-- want to show some of the kinds of form attributes  -->
         <form action="/some-form-instructions-file">
           <div>
             <!-- for wants the id of the relevant input, so that when the label is clicked, it enters the input -->
             <label for="firstname">First name:</label>
+            <!-- name is the key that the input value will be recorded to -->
+            <!-- type sets the kind of input field you want to use and gives free validation for things like "email" formatting -->
+            <!-- placeholder is default text in an input -->
+            <!-- required forces an input to not be empty before being submitted -->
             <input
               id="firstname"
               name="firstname"
               type="text"
               placeholder="Pete"
+              required
             />
           </div>
           <div>
             <label for="quality">Quality:</label>
+            <!-- select is a multiple choice field -->
             <select id="quality" name="quality">
+              <!-- a select needs options that each have a value and text -->
+              <option selected="selected" disabled>Choose a quality</option>
               <option value="low">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
@@ -120,6 +128,7 @@
               placeholder="pete@gmail.com"
             />
           </div>
+          <!-- a submit type can submit a form that it is nested in -->
           <input type="submit" value="submit" />
         </form>
       </div>
